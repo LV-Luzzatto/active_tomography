@@ -34,7 +34,7 @@ The code will create three separate output files containing the results of the a
  2. `gapstat.txt` contains the *gap-size statistics*, $g(s)$,
  3. `LC.txt` contains the volume of the largest cluster in each sample.
 
- > **NOTE.** Boundary conditions should be handled carefully. If a system has periodic boundaries, a naive implementation typically returns a large number of small gaps, as well as a large number of large gaps, with size close to the linear size of the system, due to the periodic boundaries. In this case, it is often useful to account for the periodic boundaries by redefining gap sizes as $\tilde{s} = \mathrm{min}(s, L-s)$, with $L$ the linear size of the system, and study $g(\tilde{s})$. See, for example, appendix B and the SM of "Cluster Tomography in Percolation," H. Ansell, S. Frank, & I.A. Kovács, Phys. Rev. Research 5, 043218 (2023), https://arxiv.org/abs/2307.04260.
+ > **NOTE.** Boundary conditions should be handled carefully. If a system has periodic boundaries, a naive implementation typically returns a large number of small gaps, as well as a large number of large gaps, with size close to the linear size of the system, due to the periodic boundaries. In this case, it is often useful to account for the periodic boundaries by redefining gap sizes as $\tilde{s}=\mathrm{min}(s,L-s)$, with $L$ the linear size of the system, and study $g(\tilde{s})$. See, for example, appendix B and the SM of "Cluster Tomography in Percolation," H. Ansell, S. Frank, & I.A. Kovács, Phys. Rev. Research 5, 043218 (2023), https://arxiv.org/abs/2307.04260.
 
 
 
@@ -64,4 +64,4 @@ Variables to be specified in the code:
 
  The code creates the output file `temporal_gapsize.txt`, that contains the average temporal gap-size statistics $g_t(s_t)$ for the specified particles across the selected snapshots.
 
- > **NOTE.** Numba is used to speed up the code, which requires that some data types be specified for the purpose of memory allocation. The chosen data types (e.g. int64, uint32, bool, etc.) might have to be modified to suit larger/smaller numbers of particles.
+ > **NOTE.** Numba is used to speed up the code, which requires some data types to be specified for the purpose of memory allocation. The chosen data types (e.g. int64, uint32, bool, etc.) might have to be modified to suit larger/smaller numbers of particles.
