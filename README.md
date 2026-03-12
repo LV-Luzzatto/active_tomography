@@ -1,7 +1,7 @@
 # Active Tomography
 Minimal Python implementation of spatial and temporal *cluster tomography* on snapshots of a two-dimensional active system.
 
-A version of this code was used for parts of the analysis in the paper "Spatial and Temporal
+A version of this code was used for parts of the analysis in the preprint "Spatial and Temporal
 Cluster Tomography of Active Matter," by L.V. Luzzatto, M. Casiulis, S. Martiniani, & I.A. Kovács,
 available as an e-print at https://arxiv.org/abs/2511.09444, where this analysis is applied to simulations of active Brownian particles (see https://github.com/mkasiulis/active_brawnian for the simulation code).
 
